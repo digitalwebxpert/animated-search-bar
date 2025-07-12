@@ -1,51 +1,55 @@
-body {
-  margin: 0;
-  height: 100vh;
-  background: #1e1e2f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', sans-serif;
-}
+* {
+      box-sizing: border-box;
+    }
 
-.search-container {
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-  transition: width 0.4s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+      font-family: sans-serif;
+    }
 
-.search-container.active {
-  width: 300px;
-}
+    .search-wrapper {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      cursor: pointer;
+      transition: width 0.4s ease;
+    }
 
-.search-icon {
-  color: #444;
-  font-size: 18px;
-  pointer-events: none;
-}
+    .search-wrapper.active {
+      width: 300px;
+    }
 
-.search-input {
-  flex: 1;
-  height: 100%;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 16px;
-  padding-left: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: #333;
-}
+    .search-icon {
+      color: #555;
+      font-size: 18px;
+      pointer-events: none;
+    }
 
-.search-container.active .search-input {
-  opacity: 1;
-}
+    .search-input {
+      flex: 1;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding-left: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      background: transparent;
+      color: #333;
+    }
+
+    .search-wrapper.active .search-input {
+      opacity: 1;
+    }
